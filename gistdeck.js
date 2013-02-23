@@ -3,7 +3,7 @@
   var slides = $(".pagehead, .markdown-body h1, .markdown-body h2");
 
   function initialize() {
-    var GISTDECK_CSS_URL= window.GISTDECK_CSS_URL || "https://gistdeck.herokuapp.com/gistdeck.min.css";
+    var GISTDECK_CSS_URL= window.GISTDECK_CSS_URL || "https://gistdeck.herokuapp.com/gistdeck.css";
 
     $('<link rel="stylesheet" href="' + GISTDECK_CSS_URL + '" type="text/css" />')
       .addClass('gistdeck-css')
