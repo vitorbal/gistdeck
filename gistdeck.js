@@ -1,11 +1,9 @@
 (function() {
 
-  var slides = $("#owner, .markdown-body h1, .markdown-body h2");
+  var slides = $(".pagehead, .markdown-body h1, .markdown-body h2");
 
   function initialize() {
-    if (typeof(GISTDECK_CSS_URL) == "undefined") {
-        var GISTDECK_CSS_URL="https://gistdeck.herokuapp.com/gistdeck.min.css";
-    }
+    var GISTDECK_CSS_URL= window.GISTDECK_CSS_URL || "https://gistdeck.herokuapp.com/gistdeck.min.css";
 
     $('<link rel="stylesheet" href="' + GISTDECK_CSS_URL + '" type="text/css" />')
       .addClass('gistdeck-css')
